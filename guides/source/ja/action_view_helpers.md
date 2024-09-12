@@ -217,7 +217,7 @@ word_wrap("Once upon a time", line_width: 8)
 フォームヘルパー
 ------------
 
-フォームヘルパーを利用すると、HTML要素だけでフォームを作成するよりもモデルの扱いがシンプルになります。フォームペルパーは、モデルに基づいたフォーム生成に特化しており、ユーザー入力の種類（テキストフィールド、パスワードフィールド、ドロップダウンボックスなど）に応じたさまざまなメソッドを提供します。フォームが送信されると、フォームへの入力が`params`オブジェクトにまとめられてコントローラに送信されます。
+フォームヘルパーを利用すると、HTML要素だけでフォームを作成するよりもモデルの扱いがシンプルになります。フォームヘルパーは、モデルに基づいたフォーム生成に特化しており、ユーザー入力の種類（テキストフィールド、パスワードフィールド、ドロップダウンボックスなど）に応じたさまざまなメソッドを提供します。フォームが送信されると、フォームへの入力が`params`オブジェクトにまとめられてコントローラに送信されます。
 
 フォームヘルパーについて詳しくは、[Action View フォームヘルパー](form_helpers.html)ガイドを参照してください。
 
@@ -412,7 +412,7 @@ strip_tags("Strip <i>these</i> tags!")
 strip_tags("<b>Bold</b> no more! <a href='more.html'>See more</a>")
 # => Bold no more! See more
 
-strip_links('<<a href="https://example.org">malformed & link</a>')
+strip_tags('<<a href="https://example.org">malformed & link</a>')
 # => &lt;malformed &amp; link
 ```
 
